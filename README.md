@@ -108,7 +108,11 @@ Finally we need to create our cucumber runner. we extend it with the SpringBootT
 public class CucumberRunnerTest extends SpringIntegrationTest  {
 }
 ~~~
+## Execute with profile
+- To load profile specific config, set active profile using command line while execution
+  clean test -Dspring.profiles.active=dev
 
 ## Issues
 - In case of errors or glue code not found we get error like -
 Please annotate a glue class with some context configuration.
+- Step defination file has to be in same folder as springboottest folder.
